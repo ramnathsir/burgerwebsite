@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger House</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sytle.css" />
+  </head>
+
+  <body class="m-0 p-0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top blur-navbar">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold text-warning fs-3 " href="#">
+          🍔 Burger House
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#burger">Burger</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- Search -->
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-warning" type="submit">Search</button>
+          </form>
+                  <button id="themeBtn" class="btn btn-warning mx-5">
+    🌙 
+</button>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="w-100vh"
+      style="
+        background-image: url(&quot;img/Image.png&quot;);
+        background-size: cover;
+        background-position: center;
+        min-height: 55vh;
+      "
+      id="home"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Text -->
+          <div class="col-md-6 text-white">
+            <h1 class="display-1 fw-bold mt-5">Delicious Burger</h1>
+            <p class="fs-3">
+              Enjoy fresh and tasty burgers with amazing flavors.
+            </p>
+            <button class="btn btn-warning btn-lg">Order Now</button>
+          </div>
+
+          <!-- Right Image -->
+          <div class="col-md-6 text-center mt-5">
+            <img src="img/grocery-image.png" class="img-fluid w-100" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- card-->
+
+    <div class="container" id="burger">
+      <h1 class="text-center mt-5">🍔 Our Burgers</h1>
+
+      <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4 mt-5">
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card h-100 shadow burger-card">
+            <img src="img/burger-1.png" class="card-img-top mt-5" alt="" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Classic Burger</h5>
+              <p class="card-text">Fresh beef with cheese.</p>
+              <h4 class="text-warning">₹199</h4>
+              <button class="btn btn-warning">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card h-100 shadow burger-card">
+            <img src="img/burger-3.png" class="card-img-top mt-5" alt="" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Cheese Burger</h5>
+              <p class="card-text">Extra cheese and sauce.</p>
+              <h4 class="text-warning">₹249</h4>
+              <button class="btn btn-warning">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card h-100 shadow burger-card">
+            <img src="img/snack-1.png" class="card-img-top" alt="" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Chicken Burger</h5>
+              <p class="card-text">Crispy chicken burger.</p>
+              <h4 class="text-warning">₹229</h4>
+              <button class="btn btn-warning">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="card h-100 shadow burger-card">
+            <img src="img/burger-6.png" class="card-img-top" alt="" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Double Patty</h5>
+              <p class="card-text">Double patty special.</p>
+              <h4 class="text-warning">₹299</h4>
+              <button class="btn btn-warning">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- About us -->
+
+
+
+<section class="container mt-5 border border-warning py-5 border-5" id="about">
+
+    <div class="row align-items-center">
+
+        <!-- Image -->
+        <div class="col-lg-6 text-center">
+            <img src="img/about.jpg" class="img-fluid " alt="About Us">
+        </div>
+
+        <!-- Content -->
+        <div class="col-lg-6 mt-4 mt-lg-0">
+
+            <h1 class="fw-bold mb-4">
+                🍔 About Burger House
+            </h1>
+
+            <p class="fs-5 text-muted">
+                Welcome to Burger House! We are passionate about serving
+                fresh, delicious, and high-quality burgers made with
+                premium ingredients.
+            </p>
+
+            <p class="fs-5 text-muted">
+                Our mission is to provide the best taste, fast delivery,
+                and an unforgettable dining experience for every customer.
+            </p>
+
+            <button class="btn btn-warning btn-lg">
+                Explore Menu
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <div class="container m-5">
+      <div class="text-center fw-6">
+        <button class="btn btn-danger px-4 ps-4 fs-3">EXPLORFULL MENU</button>
+      </div>
+      <img src="img/1.jfif" class="img-fluid w-100 mt-5" alt="" />
+    </div>
+
+    <div class="slider">
+      <div class="slide-track">
+        <!-- Original Cards -->
+        <div class="card burger-card">
+          <img
+            src="/img/burger-1.png "
+            style="width: 200px"
+            class="mx-auto mt-2"
+          />
+        </div>
+        <div class="card burger-card">
+          <img
+            src="/img/beverage-1.png "
+            style="width: 200px"
+            class="mx-auto mt-2 card-img-top p-3"
+          />
+        </div>
+        <div class="card burger-card">
+          <img
+            src="/img/promo-1.png "
+            style="width: 200px"
+            class="mx-auto mt-2 card-img-top p-3"
+          />
+        </div>
+        <div class="card burger-card">
+          <img
+            src="/img/beverage-4.png "
+            style="width: 200px"
+            class="mx-auto mt-2 card-img-top p-3"
+          />
+        </div>
+        <div class="card burger-card">
+          <img
+            src="/img/snack-1.png "
+            style="width: 200px"
+            class="mx-auto mt-2 card-img-top p-3"
+          />
+        </div>
+
+        <!-- Duplicate Cards -->
+        <div class="card burger-card">
+          <img
+            src="/img/snack-2.png "
+            style="width: 200px"
+            class="mx-auto mt-2 card-img-top p-3"
+          />
+        </div>
+        <div class="card burger-card">
+          <img
+            src="/img/snack-6.png "
+            style="width: 200px"
+            class="mx-auto mt-2 card-img-top p-3"
+          />
+        </div>
+        <div class="card burger-card">
+          <img
+            src="/img/snack-4.png "
+            style="width: 200px"
+            class="mx-auto mt-2 card-img-top p-3"
+          />
+        </div>
+        <div class="card burger-card">
+          <img
+            src="/img/beverage-3.png "
+            style="width: 200px"
+            class="mx-auto mt-2 card-img-top p-3"
+          />
+        </div>
+        <div class="card burger-card">
+          <img
+            src="/img/snack-5.png "
+            style="width: 200px"
+            class="mx-auto mt-2"
+          />
+        </div>
+      </div>
+    </div>
+
+    <section class="container mt-5">
+      <h1 class="text-center mb-5">⭐ Customer Reviews</h1>
+
+      <div class="container text-center">
+        <div class="row ">
+          <div class="col ">
+            <div class="card" style="width: 18rem">
+              <img src="img/review-5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5>⭐⭐⭐⭐⭐</h5>
+                <p>
+                  "Fast delivery and delicious burgers. Highly recommended!"
+                </p>
+                <h6 class="fw-bold">Rahul Sharma</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img src="img/review-4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5>⭐⭐⭐⭐⭐</h5>
+                <p>
+                  "Best burger in town! Fresh ingredients and amazing taste."
+                </p>
+                <h6 class="fw-bold">Dipanshi</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img src="img/review-3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5>⭐⭐⭐⭐⭐</h5>
+                <p>"Double Patty Burger was awesome. Will order again."</p>
+                <h6 class="fw-bold">Amit Singh</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img src="img/review-2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5>⭐⭐⭐⭐⭐</h5>
+                <p>
+                  "Fast delivery and delicious burgers. Highly recommended!"
+                </p>
+                <h6 class="fw-bold">Priya Verma</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container py-5" id="contact">
+
+    <h1 class="text-center mb-5">📞 Contact Us</h1>
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-6">
+
+            <div class="card shadow p-4">
+
+                <form>
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" placeholder="Enter your phone">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="5" placeholder="Write your message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-warning w-100 fw-bold">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- footer section -->
+
+
+
+<footer class="bg-dark text-white py-4 mt-5">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Company -->
+            <div class="col-md-4 mb-3">
+                <h4 class="text-warning">🍔 Burger House</h4>
+                <p>
+                    Serving fresh, delicious and high-quality burgers
+                    made with premium ingredients.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-warning">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#about" class="text-white text-decoration-none">About</a></li>
+                    <li><a href="#burger" class="text-white text-decoration-none">Burgers</a></li>
+                    <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-warning">Contact Us</h5>
+                <p>📞 9196354620</p>
+                <p>📧 ramnathsir095@gmail.com</p>
+                <p>📍 Lucknow, Uttar Pradesh</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="text-center">
+            <p class="mb-0">
+                © 2026 Burger House | Developed By <strong>Ramnath</strong>
+            </p>
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+
+.burger-card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.burger-card:hover{
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.slider{
+    overflow: hidden;
+}
+
+.slide-track{
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: move 10s linear infinite alternate;
+}
+
+@keyframes move{
+    from{
+        transform: translateX(100);
+    }
+
+    to{
+        transform: translateX(-40%);
+    }
+}
+
+.card burger-card{
+    .card-img-top{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+.card-img-top{
+    height: 180px;
+    object-fit: contain;
+}
+
+.blur-navbar{
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
